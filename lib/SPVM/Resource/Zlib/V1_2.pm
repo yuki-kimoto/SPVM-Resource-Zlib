@@ -1,5 +1,7 @@
 package SPVM::Resource::Zlib::V1_2;
 
+our $VERSION = '0.01';
+
 1;
 
 =head1 NAME
