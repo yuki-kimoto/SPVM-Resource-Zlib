@@ -42,9 +42,12 @@ B<lib/SPVM/MyZlib.spvm>
 
 B<lib/SPVM/MyZlib.config>
 
+  use strict;
+  use warnings;
+
   my $config = SPVM::Builder::Config->new_c99;
 
-  $config->add_resources('SPVM::Resource::Zlib::V1_2');
+  $config->use('SPVM::Resource::Zlib::V1_2');
 
   $config;
 
