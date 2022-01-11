@@ -14,6 +14,10 @@ SPVM::Resource::Zlib::V1_2 is L<zlib|https://zlib.net/"> 1.2 porting to L<Perl/S
 
 Current zlib version is zlib 1.2.11.
 
+B<SPVM::Resource::Zlib::V1_2> is based on L<SPVM>.
+
+B<L<SPVM> is yet before 1.0 released. L<SPVM> is changed without warnings. There will be quite a lot of changes until I feel enough good.>
+
 =head1 SYNOPSYS
 
 This example calls zlib functions from Perl.
@@ -22,6 +26,8 @@ B<MyZlib.pl>
 
   use strict;
   use warnings;
+  use FindBin;
+
   use lib "$FindBin::Bin/lib";
 
   use SPVM 'MyZlib';
@@ -36,9 +42,6 @@ B<lib/SPVM/MyZlib.spvm>
     
     native static method test_gzopen_gzread : void ($file : string);
   }
-
-  use strict;
-  use warnings;
 
 B<lib/SPVM/MyZlib.config>
 

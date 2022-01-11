@@ -1,0 +1,5 @@
+class MyZlib {
+  use Resource::Zlib::V1_2;
+  
+  native static method test_gzopen_gzread : void ($file : string);
+}
