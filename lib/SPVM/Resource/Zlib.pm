@@ -1,4 +1,4 @@
-package SPVM::Resource::Zlib::V1_2;
+package SPVM::Resource::Zlib;
 
 our $VERSION = '0.01';
 
@@ -6,15 +6,15 @@ our $VERSION = '0.01';
 
 =head1 NAME
 
-SPVM::Resource::Zlib::V1_2 - zlib v1.2 Resources
+SPVM::Resource::Zlib - zlib v1.2 Resources
 
 =head1 DESCRIPTION
 
-SPVM::Resource::Zlib::V1_2 is L<zlib|https://zlib.net/"> 1.2 porting to L<Perl/SPVM|SPVM>.
+SPVM::Resource::Zlib is L<zlib|https://zlib.net/"> 1.2 porting to L<Perl/SPVM|SPVM>.
 
 Current zlib version is zlib 1.2.11.
 
-B<SPVM::Resource::Zlib::V1_2> is based on L<SPVM>.
+B<SPVM::Resource::Zlib> is based on L<SPVM>.
 
 B<L<SPVM> is yet before 1.0 released. L<SPVM> is changed without warnings. There will be quite a lot of changes until I feel enough good.>
 
@@ -38,7 +38,7 @@ B<MyZlib.pl>
 B<lib/SPVM/MyZlib.spvm>
 
   class MyZlib {
-    use Resource::Zlib::V1_2;
+    use Resource::Zlib;
     
     native static method test_gzopen_gzread : void ($file : string);
   }
@@ -50,7 +50,7 @@ B<lib/SPVM/MyZlib.config>
 
   my $config = SPVM::Builder::Config->new_c99;
 
-  $config->use('SPVM::Resource::Zlib::V1_2');
+  $config->use('Resource::Zlib');
 
   $config;
 

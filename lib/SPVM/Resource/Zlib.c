@@ -2,7 +2,7 @@
 
 #include <zlib.h>
 
-int32_t SPVM__Resource__Zlib__V1_2__dummy(SPVM_ENV* env, SPVM_VALUE* stack) {
+int32_t SPVM__Resource__Zlib__dummy(SPVM_ENV* env, SPVM_VALUE* stack) {
   (void)env;
   
   z_stream z;

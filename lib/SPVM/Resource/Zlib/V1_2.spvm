@@ -1,3 +1,0 @@
-class Resource::Zlib::V1_2 : precompile {
-  native static method dummy : int ();
-}
