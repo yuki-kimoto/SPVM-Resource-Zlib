@@ -10,9 +10,9 @@ SPVM::Resource::Zlib - zlib v1.2 Resources
 
 =head1 DESCRIPTION
 
-SPVM::Resource::Zlib is L<zlib|https://zlib.net/"> 1.2 porting to L<Perl/SPVM|SPVM>.
+SPVM::Resource::Zlib is L<zlib|https://zlib.net/"> porting to L<Perl/SPVM|SPVM>.
 
-Current zlib version is zlib 1.2.11.
+Current zlib version is 1.2.11.
 
 B<SPVM::Resource::Zlib> is based on L<SPVM>.
 
