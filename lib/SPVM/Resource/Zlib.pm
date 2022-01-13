@@ -6,7 +6,7 @@ our $VERSION = '0.01';
 
 =head1 NAME
 
-SPVM::Resource::Zlib - zlib v1.2 Resources
+SPVM::Resource::Zlib - zlib porting to Perl/SPVM
 
 =head1 DESCRIPTION
 
