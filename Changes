@@ -1,5 +1,5 @@
-Revision history for SPVM::Math
+Revision history for SPVM::Resource::Zlib
 
-0.01  2021-12-07
-        [CHANGES]
-        * First release
+0.01  2022-02-01
+  [CHANGES]
+  * First development release

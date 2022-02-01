@@ -279,3 +279,4 @@ t/lib/SPVM/MyZlib.spvm
 t/lib/SPVM/ZlibTest.c
 t/lib/SPVM/ZlibTest.config
 t/lib/SPVM/ZlibTest.spvm
+t/minitest.txt.gz
