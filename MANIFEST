@@ -266,16 +266,11 @@ lib/SPVM/Resource/Zlib.native/src/zlib2ansi
 lib/SPVM/Resource/Zlib.native/src/zutil.c
 lib/SPVM/Resource/Zlib.native/src/zutil.h
 lib/SPVM/Resource/Zlib.pm
-lib/SPVM/Resource/Zlib.spvm
 Makefile.PL
 MANIFEST			This list of files
 README.md
 t/basic.t
-t/example.t
 t/lib/SPVM/MyZlib.c
 t/lib/SPVM/MyZlib.config
 t/lib/SPVM/MyZlib.spvm
-t/lib/SPVM/ZlibTest.c
-t/lib/SPVM/ZlibTest.config
-t/lib/SPVM/ZlibTest.spvm
 t/minitest.txt.gz
