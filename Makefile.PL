@@ -31,15 +31,4 @@ WriteMakefile(
     },
 );
 
-# Add Build shared library make rule
-sub MY::postamble {
-
-  my $make_rule = '';
-  
-  # Native compile make rule
-  $make_rule .= SPVM::Builder::Util::API::create_make_rule_native('Resource::Zlib');
-
-  return $make_rule;
-}
-
 1;

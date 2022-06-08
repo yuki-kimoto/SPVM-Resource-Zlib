@@ -1,5 +1,4 @@
 Changes
-lib/SPVM/Resource/Zlib.c
 lib/SPVM/Resource/Zlib.config
 lib/SPVM/Resource/Zlib.native/include/crc32.h
 lib/SPVM/Resource/Zlib.native/include/deflate.h
