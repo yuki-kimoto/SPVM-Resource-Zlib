@@ -1,5 +1,3 @@
 class ZlibTest {
-  use Resource::Zlib;
-  
   native static method test_gzopen_gzread : int ($file : string);
 }
