@@ -1,3 +1,0 @@
-class MyZlib {
-  native static method test_gzopen_gzread : void ($file : string);
-}

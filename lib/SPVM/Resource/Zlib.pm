@@ -6,21 +6,13 @@ our $VERSION = '0.01';
 
 =head1 NAME
 
-SPVM::Resource::Zlib - zlib porting to Perl/SPVM
+SPVM::Resource::Zlib - zlib Resource
 
 =head1 DESCRIPTION
 
-SPVM::Resource::Zlib is L<zlib|https://zlib.net/"> porting to L<Perl/SPVM|SPVM>.
-
-Current zlib version is 1.2.11.
-
-B<SPVM::Resource::Zlib> is based on L<SPVM>.
-
-B<L<SPVM> is yet before 1.0 released. L<SPVM> is changed without warnings. There will be quite a lot of changes until I feel enough good.>
+C<SPVM::Resource::Zlib> is the document of the L<resource|SPVM::Document::Resource> of the L<zlib|https://zlib.net/"> library.
 
 =head1 SYNOPSYS
-
-This example calls zlib functions from Perl.
 
 B<MyZlib.pl>
 
@@ -33,13 +25,12 @@ B<MyZlib.pl>
   use SPVM 'MyZlib';
 
   my $gz_file = "$FindBin::Bin/minitest.txt.gz";
+
   SPVM::MyZlib->test_gzopen_gzread($gz_file);
 
 B<lib/SPVM/MyZlib.spvm>
 
   class MyZlib {
-    use Resource::Zlib;
-    
     native static method test_gzopen_gzread : void ($file : string);
   }
 
@@ -48,9 +39,9 @@ B<lib/SPVM/MyZlib.config>
   use strict;
   use warnings;
 
-  my $config = SPVM::Builder::Config->new_c99;
+  my $config = SPVM::Builder::Config->new_gnu99(file => __FILE__);
 
-  $config->use('Resource::Zlib');
+  $config->use_resource('Resource::Zlib::V1_2_11');
 
   $config;
 
@@ -85,3 +76,14 @@ B<lib/SPVM/MyZlib.c>
     
     return 0;
   }
+
+=head1 RESOURCES
+
+The list of C<zlib> resources.
+
+=over 2
+
+* L<SPVM::Resource::Zlib::V1_2_11> - zlib v1.2.11
+
+=back
+
