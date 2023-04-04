@@ -36,7 +36,7 @@ L<zlib|https://github.com/madler/zlib>
 
 =head1 Original Product Version
 
-L<zlib 1.2.11|https://github.com/madler/zlib/releases/tag/v1.2.11>
+L<zlib v1.2.13|https://github.com/madler/zlib/releases/tag/v1.2.13>
 
 =head1 Language
 
@@ -127,6 +127,35 @@ None.
 =item * -D_GNU_SOURCE
 
 =back
+
+=head1 How to Create Resource
+
+=head2 Download
+
+  mkdir -p original.tmp
+  git clone https://github.com/madler/zlib original.tmp/zlib
+  git -C original.tmp/zlib checkout tags/v1.2.13 -b branch_v1.2.13
+  git -C original.tmp/zlib branch
+
+=head2 Extracting Source Files
+
+The source files of C<zlib> are copied into the C<src> directory by the following command.
+
+  rsync -av --exclude='*.h' original.tmp/zlib/ lib/SPVM/Resource/Zlib.native/src/
+
+The used L<source files|/"Source Files"> are extracted by the following command.
+
+  find lib/SPVM/Resource/Zlib.native/src/* | perl -p -e 's|^\Qlib/SPVM/Resource/Zlib.native/src/||' | grep -P '^\w+\.c$'
+
+=head1 Extracting Header Files
+
+The header files of C<zlib> is copied into the C<include> directory by the following command.
+
+  rsync -av --include='*.h' --exclude='*' original.tmp/zlib/ lib/SPVM/Resource/Zlib.native/include/
+
+=head1 Repository
+
+L<SPVM::Resource::Zlib - Github|https://github.com/yuki-kimoto/SPVM-Resource-Zlib>
 
 =head1 Author
 
