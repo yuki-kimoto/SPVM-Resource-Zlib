@@ -46,14 +46,6 @@ The C language
 
 C99
 
-=head1 Required Libraries
-
-None.
-
-=head1 Required Linker Flags
-
-None.
-
 =head1 Header Files
 
 =over 2
