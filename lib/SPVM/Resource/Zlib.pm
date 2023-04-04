@@ -124,7 +124,7 @@ None.
 
 =over2
 
-=item * -D_GNU_SOURCE
+=item * -D_LARGEFILE64_SOURCE
 
 =back
 
