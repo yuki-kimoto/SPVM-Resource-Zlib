@@ -114,7 +114,7 @@ C99
 
 =head1 Compiler Flags
 
-=over2
+=over 2
 
 =item * -D_LARGEFILE64_SOURCE
 
@@ -129,6 +129,12 @@ C99
   git -C original.tmp/zlib checkout tags/v1.2.13 -b branch_v1.2.13
   git -C original.tmp/zlib branch
 
+=head1 Extracting Header Files
+
+The header files of C<zlib> is copied into the C<include> directory by the following command.
+
+  rsync -av --include='*.h' --exclude='*' original.tmp/zlib/ lib/SPVM/Resource/Zlib.native/include/
+
 =head2 Extracting Source Files
 
 The source files of C<zlib> are copied into the C<src> directory by the following command.
@@ -138,12 +144,6 @@ The source files of C<zlib> are copied into the C<src> directory by the followin
 The used L<source files|/"Source Files"> are extracted by the following command.
 
   find lib/SPVM/Resource/Zlib.native/src/* | perl -p -e 's|^\Qlib/SPVM/Resource/Zlib.native/src/||' | grep -P '^\w+\.c$'
-
-=head1 Extracting Header Files
-
-The header files of C<zlib> is copied into the C<include> directory by the following command.
-
-  rsync -av --include='*.h' --exclude='*' original.tmp/zlib/ lib/SPVM/Resource/Zlib.native/include/
 
 =head1 Repository
 
