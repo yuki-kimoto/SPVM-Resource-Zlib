@@ -4,7 +4,6 @@ use strict;
 use warnings;
 use Config;
 use Getopt::Long 'GetOptions';
-use Getopt::Long 'GetOptions';
 
 GetOptions(
   'meta' => \my $meta,
