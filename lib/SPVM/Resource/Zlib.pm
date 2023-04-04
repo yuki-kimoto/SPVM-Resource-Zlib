@@ -44,7 +44,7 @@ The C language
 
 =head1 Language Specification
 
-GNU C99
+C99
 
 =head1 Required Libraries
 
