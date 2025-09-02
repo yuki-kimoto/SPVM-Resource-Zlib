@@ -129,7 +129,7 @@ C99
   git -C .tmp/zlib checkout tags/v1.2.13 -b branch_v1.2.13
   git -C .tmp/zlib branch
 
-=head1 Extracting Header Files
+=head2 Extracting Header Files
 
 The header files of C<zlib> is copied into the C<include> directory by the following command.
 
