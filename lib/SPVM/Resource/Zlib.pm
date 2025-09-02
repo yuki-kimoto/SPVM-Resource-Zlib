@@ -44,7 +44,7 @@ The C language
 
 =head1 Language Specification
 
-C99
+GNU C99
 
 =head1 Header Files
 
