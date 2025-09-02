@@ -36,7 +36,7 @@ L<zlib|https://github.com/madler/zlib>
 
 =head1 Original Product Version
 
-L<zlib v1.2.13|https://github.com/madler/zlib/releases/tag/v1.2.13>
+L<zlib v1.3.1|https://github.com/madler/zlib/releases/tag/v1.3.1>
 
 =head1 Language
 
@@ -126,7 +126,7 @@ C99
 
   mkdir -p .tmp
   git clone https://github.com/madler/zlib .tmp/zlib
-  git -C .tmp/zlib checkout tags/v1.2.13 -b branch_v1.2.13
+  git -C .tmp/zlib checkout tags/v1.3.1 -b branch_v1.3.1
   git -C .tmp/zlib branch
 
 =head2 Extracting Header Files
