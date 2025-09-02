@@ -6,7 +6,7 @@ our $VERSION = "1.003";
 
 =head1 Name
 
-SPVM::Resource::Zlib - Resource of zlib Library
+SPVM::Resource::Zlib - zlib Resources
 
 =head1 Description
 
@@ -16,10 +16,10 @@ SPVM::Resource::Zlib class in L<SPVM> is a L<resource|SPVM::Document::Resource> 
 
 MyClass.config:
   
-  my $config = SPVM::Builder::Config->new_c99(file => __FILE__);
-
+  my $config = SPVM::Builder::Config->new_gnu99;
+  
   $config->use_resource('Resource::Zlib');
-
+  
   $config;
 
 MyClass.c:
