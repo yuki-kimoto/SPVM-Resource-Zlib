@@ -8,7 +8,7 @@
 .github/workflows/windows-latest.yml
 .gitignore
 Changes
-lib/SPVM/Resource/Zlib.config
+lib/SPVM/Resource/Zlib.build
 lib/SPVM/Resource/Zlib.native/include/.gitkeep
 lib/SPVM/Resource/Zlib.native/include/crc32.h
 lib/SPVM/Resource/Zlib.native/include/deflate.h
@@ -260,7 +260,7 @@ MANIFEST.SKIP
 README.md
 t/basic.t
 t/lib/SPVM/MyZlib.c
+t/lib/SPVM/TestCase/Zlib.build
 t/lib/SPVM/TestCase/Zlib.c
-t/lib/SPVM/TestCase/Zlib.config
 t/lib/SPVM/TestCase/Zlib.spvm
 t/minitest.txt.gz
