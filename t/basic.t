@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use lib "t/lib";
 
-use SPVM 'MyZlib';
+use SPVM 'TestCase::Zlib';
 
 use SPVM 'Resource::Zlib';
 use SPVM::Resource::Zlib;
@@ -14,7 +14,7 @@ my $api = SPVM::api();
 my $start_memory_blocks_count = $api->get_memory_blocks_count;
 
 my $gz_file = "$FindBin::Bin/minitest.txt.gz";
-SPVM::MyZlib->test_gzopen_gzread($gz_file);
+SPVM::TestCase::Zlib->gzopen_gzread($gz_file);
 
 ok(1);
 
