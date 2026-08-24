@@ -149,13 +149,8 @@ package MY {
       $options->{config_global_file} = $config_global_file;
       $options->{order_only_dependent_files} = ['pm_to_blib'];
       
-      # Build native class in test directory for tests (TestCase::Zlib)
-      {
-        my $test_class_search_dir = 't/lib';
-        if (-d $test_class_search_dir) {
-          $make_rule .= SPVM::Builder::Util::API::create_make_rule_native('TestCase::Zlib', {%$options, output_dir => $test_class_search_dir, class_search_dir => [$test_class_search_dir]});
-        }
-      }
+      my $test_class_search_dir = 't/lib';
+      $make_rule .= SPVM::Builder::Util::API::create_make_rule_native('TestCase::Zlib', {%$options, output_dir => $test_class_search_dir, class_search_dir => [$test_class_search_dir]});
     }
     
     return $make_rule;
